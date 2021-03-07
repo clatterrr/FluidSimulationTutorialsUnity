@@ -1,0 +1,39 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+struct fgHalfStruct
+{
+    float f1, f2, f3, g1, g2, g3;
+};
+struct UStruct
+{
+    float U1, U2, U3;
+};
+struct huvStruct
+{
+    float h, u, v;
+};
+RWStructuredBuffer<fgHalfStruct> fgHalf;
+RWStructuredBuffer<UStruct> U;
+RWStructuredBuffer<huvStruct> huv;
+int nmax;
+float dt_dx;
+
+[numthreads(32, 1, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    int columX = id.x % nmax;
+    int rowY = id.x / nmax;
+    int fHalfIdx = rowY * (nmax + 1) + columX;
+    int gHalfIdx = rowY * nmax + columX;
+    if (id.x < nmax * nmax)
+    {
+        U[id.x].U1 -= dt_dx * (fgHalf[fHalfIdx + 1].f1 - fgHalf[fHalfIdx].f1) - dt_dx * (fgHalf[gHalfIdx + nmax].g1 - fgHalf[gHalfIdx].g1);
+        U[id.x].U2 -= dt_dx * (fgHalf[fHalfIdx + 1].f2 - fgHalf[fHalfIdx].f2) - dt_dx * (fgHalf[gHalfIdx + nmax].g2 - fgHalf[gHalfIdx].g2);
+        U[id.x].U3 -= dt_dx * (fgHalf[fHalfIdx + 1].f3 - fgHalf[fHalfIdx].f3) - dt_dx * (fgHalf[gHalfIdx + nmax].g3 - fgHalf[gHalfIdx].g3);
+        huv[id.x].h = U[id.x].U1;
+        huv[id.x].u = U[id.x].U2 / U[id.x].U1;
+        huv[id.x].v = U[id.x].U3 / U[id.x].U1;
+    }
+
+}

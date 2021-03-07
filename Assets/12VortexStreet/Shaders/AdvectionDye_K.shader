@@ -1,0 +1,64 @@
+﻿Shader "VortexStreet/AdvectionDye_K"
+{
+    Properties
+    {
+		_MainTex("Texture", 2D) = "white" {}
+		VelocityTex("VelocityTex", 2D) = "white" {}
+		DensityTex("DensityTex", 2D) = "white" {}
+		InitDyeTex("InitDyeTex", 2D) = "white" {}
+		BlockTex("BlockTex", 2D) = "white" {}
+    }
+    SubShader
+    {
+        Tags { "RenderType"="Opaque" }
+        LOD 100
+
+        Pass
+        {
+            CGPROGRAM
+            #pragma vertex vert
+            #pragma fragment frag
+            // make fog work
+            #pragma multi_compile_fog
+
+            #include "UnityCG.cginc"
+
+            struct appdata
+            {
+                float4 vertex : POSITION;
+                float2 uv : TEXCOORD0;
+            };
+
+            struct v2f
+            {
+                float2 uv : TEXCOORD0;
+                UNITY_FOG_COORDS(1)
+                float4 vertex : SV_POSITION;
+            };
+
+			sampler2D VelocityTex;
+			sampler2D DensityTex;
+			sampler2D InitDyeTex;
+			sampler2D BlockTex;
+			float dt;
+			sampler2D _MainTex;
+			float4 _MainTex_ST;
+
+            v2f vert (appdata v)
+            {
+                v2f o;
+                o.vertex = UnityObjectToClipPos(v.vertex);
+                o.uv = TRANSFORM_TEX(v.uv, _MainTex);
+                UNITY_TRANSFER_FOG(o,o.vertex);
+                return o;
+            }
+			float4 frag(v2f i) :SV_Target{
+				float2 vel = tex2D(VelocityTex, i.uv).xy;
+				float4 col = tex2D(DensityTex, i.uv - 0.01f*vel);
+				if(i.uv.x < 0.1f)col = tex2D(InitDyeTex, i.uv);
+				return col;
+			}
+            ENDCG
+        }
+    }
+}

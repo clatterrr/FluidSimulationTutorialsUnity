@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Splat_SMat
+  m_Shader: {fileID: 4800000, guid: 1e89beac74952a34fb179cd11db90771, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - VelocityDensityTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - radius: 0.001
+    m_Colors:
+<<<<<<< HEAD
+    - pointerpos: {r: 335.01236, g: 451.95062, b: 0, a: 0}
+=======
+    - pointerpos: {r: 506.00757, g: 360.05777, b: 0, a: 0}
+  m_BuildTextureStacks: []
+>>>>>>> 33c11bdfd6ce5b4669b5c37773f6f57b8d7bceb2

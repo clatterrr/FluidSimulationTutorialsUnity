@@ -1,0 +1,25 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+struct huvStruct
+{
+    float h;
+    float u;
+    float v;
+};
+struct FGStruct
+{
+    float F1, F2, F3, G1, G2, G3;
+};
+RWStructuredBuffer<huvStruct> huv;
+RWStructuredBuffer<FGStruct> FG;
+[numthreads(32, 1, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    FG[id.x].F1 = huv[id.x].h * huv[id.x].u;
+    FG[id.x].F2 = huv[id.x].h * huv[id.x].u * huv[id.x].u + 0.5f * 10.0f * huv[id.x].h * huv[id.x].h;
+    FG[id.x].F3 = huv[id.x].h * huv[id.x].u * huv[id.x].v;
+    FG[id.x].G1 = huv[id.x].h * huv[id.x].v;
+    FG[id.x].G2 = huv[id.x].h * huv[id.x].u * huv[id.x].v;
+    FG[id.x].G3 = huv[id.x].h * huv[id.x].v * huv[id.x].v + 0.5f * 10.0f * huv[id.x].h * huv[id.x].h;
+}
