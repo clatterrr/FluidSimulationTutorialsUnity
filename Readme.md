@@ -1,12 +1,18 @@
 游戏流体力学基础及unity代码
 
+github地址https://github.com/clatterrr/FluidSimulationTutorialsUnity
+
+gitee码云地址https://gitee.com/clatterrr/FluidSimulationTutorialsUnity
+
+qq模拟流体交流群1001290801，欢迎加入
+
 代码作者：光影帽子
 
 【游戏流体力学基础及Unity代码（一）】热传导方程
 
 https://zhuanlan.zhihu.com/p/263053689
 
-【游戏流体力学基础及Unity代码（二）】用平流方程模拟染料流动
+【游戏流体力学基础及Unity代码（二）】有限差分法
 
 https://zhuanlan.zhihu.com/p/264153771
 
@@ -36,7 +42,7 @@ https://zhuanlan.zhihu.com/p/283662524
 
 https://zhuanlan.zhihu.com/p/309860521
 
-【游戏流体力学基础及Unity代码（八）】激波捕捉法和RiemannSolver
+【游戏流体力学基础及Unity代码（八）】有限体积法
 
 https://zhuanlan.zhihu.com/p/331771977
 
@@ -67,3 +73,11 @@ https://zhuanlan.zhihu.com/p/345332340
  ![Alt Text](images\ch12VorteXStreet.png)
 
 B站视频https://www.bilibili.com/video/BV1u5411H7hr
+
+【游戏流体力学基础及Unity代码（十三）】泊松压力方程，SIMPLE算法
+
+https://zhuanlan.zhihu.com/p/347410166
+
+【游戏流体力学基础及Unity代码（十三）】舌尖上的有限元Galerkin法
+
+https://zhuanlan.zhihu.com/p/358033368
