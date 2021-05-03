@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Viscosity"
+﻿Shader "NaiverEquation/Viscosity"
 {
     Properties
     {

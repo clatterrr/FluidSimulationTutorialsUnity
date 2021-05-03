@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Divergence"
+﻿Shader "EulerEquation/Divergence"
 {
     Properties
     {

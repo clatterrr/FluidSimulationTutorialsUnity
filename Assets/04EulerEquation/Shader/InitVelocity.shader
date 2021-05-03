@@ -1,4 +1,4 @@
-﻿Shader "Unlit/InitVelocity"
+﻿Shader "EulerEquation/InitVelocity"
 {
     Properties
     {

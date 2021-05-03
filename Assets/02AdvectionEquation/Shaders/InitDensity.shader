@@ -1,4 +1,4 @@
-﻿Shader "Unlit/InitDensity"
+﻿Shader "AdvectionEquation/InitDensity"
 {
     Properties
     {

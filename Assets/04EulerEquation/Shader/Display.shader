@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Display"
+﻿Shader "EulerEquation/Display"
 {
     Properties
     {

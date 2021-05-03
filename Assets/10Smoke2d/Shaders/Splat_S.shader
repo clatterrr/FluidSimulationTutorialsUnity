@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Splat_S"
+﻿Shader "Smoke2d/Splat_S"
 {
     Properties
     {

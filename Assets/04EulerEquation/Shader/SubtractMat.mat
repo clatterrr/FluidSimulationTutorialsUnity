@@ -24,13 +24,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _PressureTex:
-        m_Texture: {fileID: 8400000, guid: 096301121f37816449704533de8ad2a4, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _VelocityTex:
-        m_Texture: {fileID: 8400000, guid: 4b57a6c8d1f5b8b4c97ee627934617c0, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors: []
-  m_BuildTextureStacks: []

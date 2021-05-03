@@ -4,13 +4,6 @@ using UnityEngine;
 
 public class SmokeManager : MonoBehaviour
 {
-	public Material AdvectionMat;
-	public Material SplatMat;
-	public Material CurlMat;
-	public Material VorticityMat;
-	public Material DivergenceMat;
-	public Material PressureMat;
-	public Material SubtractMat;
 	private int TexWidth = Screen.width;
 	private int TexHeight = Screen.height;
 	
@@ -22,7 +15,16 @@ public class SmokeManager : MonoBehaviour
 	private RenderTexture VelocityRT2;
 	private RenderTexture PressureRT;
 	private RenderTexture PressureRT2;
-	
+
+
+	public Material AdvectionMat;
+	public Material SplatMat;
+	public Material CurlMat;
+	public Material VorticityMat;
+	public Material DivergenceMat;
+	public Material PressureMat;
+	public Material SubtractMat;
+
 	private float dt = 0.01f;
 	private float MouseDX = 0.0f, MouseDY = 0.0f, MouseX, MouseY;
 
@@ -41,7 +43,7 @@ public class SmokeManager : MonoBehaviour
 	
     void Start()
     {
-        DivergenceRT = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.RHalf); DivergenceRT.Create();
+		DivergenceRT = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.RHalf); DivergenceRT.Create();
 		CurlRT = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.RGHalf); CurlRT.Create();
 		DensityRT = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.ARGBHalf); DensityRT.Create();
 		DensityRT2 = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.ARGBHalf); DensityRT2.Create();

@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Divergence_S"
+﻿Shader "Smoke2d/Divergence_S"
 {
     Properties
     {

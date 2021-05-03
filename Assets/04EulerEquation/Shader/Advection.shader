@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Advection"
+﻿Shader "EulerEquation/Advection"
 {
     Properties
     {

@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Advection_S"
+﻿Shader "Smoke2d/Advection_S"
 {
     Properties
     {
@@ -60,10 +60,15 @@
 				float4 a = tex2D(sam, uv.xy); 
 				float4 b = tex2D(sam, uv.zy); 
 				float4 c = tex2D(sam, uv.xw); 
-				float4 d = tex2D(sam, uv.zw); 
-				float2 f = p - st.xy;
+				float4 d = tex2D(sam, uv.zw);
+                float2 f = p - st.xy;
 				return lerp(lerp(a, b, f.x), lerp(c, d, f.x), f.y);
+
+                
+
+
 			}
+
 			float4 frag(v2f i) :SV_Target{
 				float2 coord = i.uv* VelocityTex_TexelSize.zw - dt * tex2D(VelocityTex, i.uv);
 				float4 col = dissipation * bilerp(VelocityDensityTex, coord);

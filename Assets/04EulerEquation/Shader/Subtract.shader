@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Substract"
+﻿Shader "EulerEquation/Substract"
 {
     Properties
     {

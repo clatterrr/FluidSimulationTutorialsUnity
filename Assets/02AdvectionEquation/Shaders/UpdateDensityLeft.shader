@@ -1,4 +1,4 @@
-﻿Shader "Unlit/UpdateDensityLeft"
+﻿Shader "AdvectionEquation/UpdateDensityLeft"
 {
     Properties
     {

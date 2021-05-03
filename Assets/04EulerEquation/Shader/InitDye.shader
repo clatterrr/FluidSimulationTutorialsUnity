@@ -1,4 +1,4 @@
-﻿Shader "Unlit/InitDye"
+﻿Shader "EulerEquation/InitDye"
 {
     Properties
     {

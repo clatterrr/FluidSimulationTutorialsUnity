@@ -5,7 +5,7 @@ import numpy as np
 
 nmax = 6  # 有多长
 mmax = 4  # 有多高
-tmax = 1
+tmax = 10
 u = np.zeros((nmax + 1, mmax + 2))  # 每回合初始猜的，和最终值
 u_star = np.zeros((nmax + 1, mmax + 2))  # 用于迭代
 

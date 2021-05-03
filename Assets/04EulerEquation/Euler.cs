@@ -22,9 +22,18 @@ public class Euler : MonoBehaviour
     public Material DisplayMat;
 
     double MouseX = 0, MouseY = 0, MouseDX = 0, MouseDY = 0;
+    int  TexWidth = 512, TexHeight = 512;
     int MouseDown = 0;
     void Start()
     {
+        DivergenceRT = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.RHalf); DivergenceRT.Create();
+        DyeRT = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.RGHalf); DyeRT.Create();
+        DyeRT2 = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.ARGBHalf); DyeRT2.Create();
+        VelocityRT = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.RGHalf); VelocityRT.Create();
+        VelocityRT2 = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.RGHalf); VelocityRT2.Create();
+        PressureRT = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.RHalf); PressureRT.Create();
+        PressureRT2 = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.RHalf); PressureRT2.Create();
+
         Graphics.Blit(null,DyeRT,InitDyeMat);
         Graphics.Blit(null, VelocityRT, InitVelocityMat);
         Graphics.Blit(null, PressureRT);
@@ -85,10 +94,7 @@ public class Euler : MonoBehaviour
     {
         Prepare();
         //试一下把DyeRT改成VelocityRT/DivergenceRT/PressureRT会出现什么？
-<<<<<<< HEAD
         Graphics.Blit(DyeRT, destination);
-=======
-        Graphics.Blit(DivergenceRT, destination);
->>>>>>> 33c11bdfd6ce5b4669b5c37773f6f57b8d7bceb2
+       // Graphics.Blit(DivergenceRT, destination);
     }
 }

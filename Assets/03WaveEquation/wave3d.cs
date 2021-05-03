@@ -92,15 +92,11 @@ public class wave3d : MonoBehaviour
                 CenterHeight = verts[VerIdx].y;
 
                 float Fsource = 0.0f;
-<<<<<<< HEAD
                 if (i == Dimension / 2 && j == Dimension / 2)   Fsource = Mathf.Sin(Time.time * 2.0f)/2;
                 TimeMius2CenterHeight = TimeMius2Verts[VerIdx].y;
                 float _Speed = 0.4f;
-=======
                 if (i == Dimension / 2 && j == Dimension / 2)   Fsource = Mathf.Sin(Time.time * 2.0f) * 2;
                 TimeMius2CenterHeight = TimeMius2Verts[VerIdx].y;
-                float _Speed = 0.6f;
->>>>>>> 33c11bdfd6ce5b4669b5c37773f6f57b8d7bceb2
                 float _Height = 2 * CenterHeight - TimeMius2CenterHeight + (LeftHeight + RightHeight + BottomHeight + TopHeight - 4 * CenterHeight) * _Speed * _Speed + Fsource;
                 NewVerts[j * Dimension + i] = new Vector3(i / 10.0f, _Height, j / 10.0f);
             }

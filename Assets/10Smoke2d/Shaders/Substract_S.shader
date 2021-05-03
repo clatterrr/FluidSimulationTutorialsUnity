@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Substract"
+﻿Shader "Smoke2d/Substract"
 {
     Properties
     {

@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Vorticity_S"
+﻿Shader "Smoke2d/Vorticity_S"
 {
     Properties
     {

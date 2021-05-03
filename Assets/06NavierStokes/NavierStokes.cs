@@ -23,9 +23,19 @@ public class NavierStokes : MonoBehaviour
     public Material DisplayMat;
 
     double MouseX = 0, MouseY = 0, MouseDX = 0, MouseDY = 0;
+    int TexWidth = 512, TexHeight = 512;
     int MouseDown = 0;
     void Start()
     {
+
+        DivergenceRT = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.RHalf); DivergenceRT.Create();
+        DyeRT = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.RGHalf); DyeRT.Create();
+        DyeRT2 = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.ARGBHalf); DyeRT2.Create();
+        VelocityRT = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.RGHalf); VelocityRT.Create();
+        VelocityRT2 = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.RGHalf); VelocityRT2.Create();
+        PressureRT = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.RHalf); PressureRT.Create();
+        PressureRT2 = new RenderTexture(TexWidth, TexHeight, 0, RenderTextureFormat.RHalf); PressureRT2.Create();
+
         Graphics.Blit(null, DyeRT, InitDyeMat);
         Graphics.Blit(null, VelocityRT, InitVelocityMat);
         Graphics.Blit(null, PressureRT);

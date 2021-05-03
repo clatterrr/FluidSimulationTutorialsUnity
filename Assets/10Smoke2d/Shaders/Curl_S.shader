@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Curl_S"
+﻿Shader "Smoke2d/Curl_S"
 {
     Properties
     {

@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Pressure_S"
+﻿Shader "Smoke2d/Pressure_S"
 {
     Properties
     {

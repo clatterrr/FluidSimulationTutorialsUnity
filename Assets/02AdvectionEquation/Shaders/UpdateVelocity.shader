@@ -1,4 +1,4 @@
-﻿Shader "Unlit/UpdateVelocity"
+﻿Shader "AdvectionEquation/UpdateVelocity"
 {
     Properties
     {

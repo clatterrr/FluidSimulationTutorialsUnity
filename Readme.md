@@ -78,6 +78,22 @@ B站视频https://www.bilibili.com/video/BV1u5411H7hr
 
 https://zhuanlan.zhihu.com/p/347410166
 
-【游戏流体力学基础及Unity代码（十三）】舌尖上的有限元Galerkin法
+【游戏流体力学基础及Unity代码（十四）】舌尖上的有限元Galerkin法
 
 https://zhuanlan.zhihu.com/p/358033368
+
+【游戏流体力学基础及Unity代码（十五）】线性有限元及弹性物体模拟
+
+https://zhuanlan.zhihu.com/p/369505527
+
+波前推进法网格生成https://www.bilibili.com/video/BV1ZK4y1w7R6/
+
+![Alt Text](images/ch15meshgen.png)
+
+弹性果冻模拟https://www.bilibili.com/video/BV1w84y1c7K2/
+
+![Alt Text](images/ch15jelly.png)
+
+【游戏流体力学基础及Unity代码（十六）】非线性有限元及牛顿迭代法
+
+https://zhuanlan.zhihu.com/p/369521901

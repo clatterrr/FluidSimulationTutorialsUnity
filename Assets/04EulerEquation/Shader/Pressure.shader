@@ -1,4 +1,4 @@
-﻿Shader "Unlit/Pressure"
+﻿Shader "EulerEquation/Pressure"
 {
     Properties
     {
