@@ -3,6 +3,7 @@ import numpy as np
 浸入边界法Immersed Boundary
 参考自特别好的库
 https://github.com/nickabattista/IB2d
+未完工，写不下去了
 
 '''
 nmax = 64

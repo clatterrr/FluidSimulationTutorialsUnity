@@ -104,7 +104,7 @@ https://zhuanlan.zhihu.com/p/369521901
 
 # 收集
 
-目前代码和视频仍然会尽量更新，但文字版教程将尽量放缓，是为了确保教程质量，以及不犯低级错误。所以你可能会发现一大堆没对应教程的代码，这些宝贵的代码收集起来很不容易，我会尽量保证代码可读性，以及我是从哪里得到的。不过一般我下载到的都是matlab或c++的，我会把它转写成python以加深理解。
+之后预计很长一段时间不会更新了。是为了确保教程质量，以及不犯低级错误。所以你可能会发现一大堆没对应教程的代码，这些宝贵的代码收集起来很不容易，我会尽量保证代码可读性，以及我是从哪里得到的。不过一般我下载到的都是matlab或c++的，我会把它转写成python以加深理解。
 
 以下是我收集的一些代码和网址，觉得很不错就贴上来，不定时更新。不过这些网址可能随时会挂掉
 
@@ -113,6 +113,8 @@ https://zhuanlan.zhihu.com/p/369521901
 https://sites.google.com/view/sglee/research 进入页面，搜索code，找到“\21. Wanho Lee and Seunggyu Lee, Immersed boundary method for simulating interfacial problems, Mathematics 8(11) (2020) 1982 [..](https://drive.google.com/file/d/1aeJv_8TqKAmYVYxu9R36yhnCNwJFoxFd/view?usp=sharing) (IF2019:1.747) ([code](https://drive.google.com/file/d/1zwRWtJG8cu6lqRBnzYHYbpWHuZNfMmFU/view?usp=sharing))”字样，点击code即可下载。这个页面上还有许多文章是可免费下载的
 
 https://github.com/nickabattista/IB2d 很棒的开源库，有代码，论文和视频
+
+https://www.math.nyu.edu/~peskin/ib_lecture_notes/index.html
 
 ### 线性方程组的迭代解法
 
@@ -125,6 +127,34 @@ http://persson.berkeley.edu/ 特别棒的二维三维网格生成的matlab代码
 ### 非定常流
 
 https://www.mathworks.com/matlabcentral/fileexchange/?q=profileid:4187051
+
+### 声学
+
+Physically Based Sound for Computer Animation and Virtual Environments
+
+[ACM SIGGRAPH 2016 Course](http://s2016.siggraph.org/courses/events/physically-based-sound-computer-animation-and-virtual-environments)
+
+### 水平集
+
+教授Osher Stanley,
+
+*Geometric Level Set Methods in Imaging,Vision & Graphics*
+
+https://www.cs.ubc.ca/~mitchell/ToolboxLS/ matlab示例，非常棒的成系统的代码。
+
+https://github.com/scikit-image/scikit-image/blob/main/skimage/segmentation/_chan_vese.py 有一个有名的python库叫scikit-image，里面实现了chanvese算法
+
+### Closet Point Method
+
+https://www.math.ubc.ca/~cbm/cpm/
+
+### 多重网格
+
+http://pages.cs.wisc.edu/~sifakis/project_pages/mgpcg.html 并行多重网格泊松求解器附代码
+
+### 数学
+
+http://pages.cs.wisc.edu/~sifakis/project_pages/svd.html Computing the Singular Value Decomposition of 3x3 matrices with minimal branching and elementary floating point operations附代码
 
 ### 杂
 
