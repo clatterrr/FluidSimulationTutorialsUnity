@@ -116,13 +116,98 @@ https://github.com/nickabattista/IB2d 很棒的开源库，有代码，论文和
 
 https://www.math.nyu.edu/~peskin/ib_lecture_notes/index.html
 
+### Fluid Solid Interaction
+
+An Introduction to Fluid-Structure Interaction: Application to the Piston Problem  
+
+项目地址 ： http://www.utc.fr/~elefra02/ifs/
+
+代码地址：http://www.utc.fr/~elefra02/ifs/archive_FSI.tar.gz
+
+本地代码：D:\FluidSim\FluidSim\FluidSolidInteraction\archive_FSI
+
+https://github.com/WhiteTshirtXI/IBFS_M
+
+### 有限元
+
+Efficient implementation of adaptive P1-FEM in Matlab
+
+https://www.pplusplus.lima-city.de/femfluid.html Pressure Solve with Finite Elements  很好的matlab库
+
+代码地址：https://www.pplusplus.lima-city.de/lib/data/femfluid/FEM%20Fluid%20Source.zip
+
+本地地址：D:\FluidSim\FluidSim\FEMNEW\FEM Fluid Source\FEM Fluid
+
+https://www.math.hu-berlin.de/~cc/cc_homepage/software/software.shtml 
+
+Computationally Solving Nonlinear Membranes with Plane Stress Condition  
+
+https://github.com/vasko6d/finite-element-solver
+
+D:\FluidSim\FluidSim\FEMGOOD\finite-element-solver-master\finite-element-solver-master
+
+H^1-Stability of the L^2-Projection onto Finite Element Spaces on Adaptively Refined Quadrilateral Meshes
+
+https://github.com/aschmidtuulm/h1-stability
+
+### Galerkin
+
+An Introduction to Element-based Galerkin Methods on Tensor-Product Bases: Analysis, Algorithms, and Applications
+
+https://github.com/fxgiraldo/Element-based-Galerkin-Methods
+
+D:\FluidSim\FluidSim\Galerkin\Element-based-Galerkin-Methods-master\Element-based-Galerkin-Methods-master
+
+https://github.com/tuhouwang?tab=repositories
+
+Nodal Based Galerkin
+
+https://github.com/Achyut2404/nodalDG
+
+D:\FluidSim\FluidSim\Galerkin\nodalDG-master\src
+
+https://github.com/Jacklswalsh/DGM-Advection-AD 自适应快速一维Galerkin
+
+D:\FluidSim\FluidSim\Galerkin\DGM-Advection-AD-main
+
+https://github.com/asdf123101/HDPG1D
+
+D:\FluidSim\FluidSim\Galerkin\HDPG1D-master
+
+### 谱方法
+
+SPECTRAL METHOD FOR TIME DEPENDENT NAVIER-STOKES
+EQUATIONS  
+
+### 边界元
+
+https://team-pancho.github.io/deltaBEM/download.html
+
 ### 线性方程组的迭代解法
 
 http://www.netlib.org/templates/matlab/ 就是一些共轭梯度，预处理的共轭梯度，最小残差GMRES，双共轭梯度
 
+https://github.com/JuliaLinearAlgebra/IterativeSolvers.jl Julia语言实现的各种方程组解法。
+
+*Optimization in Practice with MATLAB®: For Engineering Students and Professionals* 最优化书籍
+
+https://github.com/Manchery/numerical-analysis-practice
+
 ### 网格生成
 
 http://persson.berkeley.edu/ 特别棒的二维三维网格生成的matlab代码
+
+https://ifsnumericaltools.weebly.com/ 也是很棒的代码 D:\FluidSim\MathsWorkMisc\mesh2d_v24\Mesh2d_v24
+
+https://github.com/aschmidtuulm/ameshref Adaptive Mesh Refinement in 2D–An Efficient Implementation in Matlab论文对应的代码
+
+TetGen http://wias-berlin.de/software/tetgen/formAction12.jsp
+
+D:\FluidSim\OpenSource\tetgen1.5.1\tetgen1.5.1
+
+https://doc.cgal.org/4.13/Manual/tutorials.html
+
+
 
 ### 非定常流
 
@@ -144,19 +229,205 @@ https://www.cs.ubc.ca/~mitchell/ToolboxLS/ matlab示例，非常棒的成系统�
 
 https://github.com/scikit-image/scikit-image/blob/main/skimage/segmentation/_chan_vese.py 有一个有名的python库叫scikit-image，里面实现了chanvese算法
 
+*A discrete level-set topology optimization code written in Matlab*
+
 ### Closet Point Method
 
 https://www.math.ubc.ca/~cbm/cpm/
+
+### 多孔介质
+
+An Introduction to the Numerics of Flow in Porous Media using Matlab  
+
+https://github.com/pmgbergen/porepy
+
+https://github.com/jjhidalgo/HGCchem2 有分层现象，大佬主页https://jjhidalgo.wordpress.com/codes/
+
+### 浅水波
+
+项目地址：https://web.cse.ohio-state.edu/~wang.3602/courses/cse3541-2019-fall/index.html
+
+unity 包：https://web.cse.ohio-state.edu/~wang.3602/courses/cse3541-2019-fall/lab4/wave_example.unitypackage
 
 ### 多重网格
 
 http://pages.cs.wisc.edu/~sifakis/project_pages/mgpcg.html 并行多重网格泊松求解器附代码
 
+https://github.com/JuliaLinearAlgebra/AlgebraicMultigrid.jl/tree/master/src 代数多重网格
+
+https://github.com/danfortunato 直接关注这个人就行了
+
+https://github.com/pymatting/pymatting/blob/master/pymatting/preconditioner/vcycle.py
+
+https://github.com/lyc102/ifem
+
+https://amgcl.readthedocs.io/en/latest/examples.html
+
+### 多相流
+
+2D Cartesian Quadtree Adaptive Mesh Refinement (AMR) for multiphase Five Equations Model.https://github.com/dattv/2D_CARFIVE
+
+https://github.com/Spoonacular/LBM_python
+
+https://github.com/mirsandiharyo/multiphase_flows_front_tracking_python 模拟泡泡和水滴
+
+https://github.com/rarbarim/multiphase_flow_simulator 附带报告，作者还有一些别的代码
+
 ### 数学
 
 http://pages.cs.wisc.edu/~sifakis/project_pages/svd.html Computing the Singular Value Decomposition of 3x3 matrices with minimal branching and elementary floating point operations附代码
 
+### 泡泡
+
+Role of the Dynamic Contact Angle on Splashing  
+
+### 湍流
+
+DNSLABhttps://md-datasets-cache-zipfiles-prod.s3.eu-west-1.amazonaws.com/6gtnjwwg8j-1.zip
+
+LESCODE https://cfd.engr.uconn.edu/ 不过代码需要填个申请表格才能获取
+
+本地代码地址：D:\FluidSim\FluidSim\LES\les.r123\les
+
+Turbulent Fluids – SIGGRAPH Course https://ge.in.tum.de/research/turbulent-fluids-siggraph-course/
+
+https://github.com/thijsbon/CMF_project_thijs_victor 有湍流和墙函数
+
+https://github.com/Maikuelet/Turbulence_Modelling_Burgulence
+
+### 边界元
+
+https://github.com/Timmmdavis/CutAndDisplace
+
+https://github.com/Timmmdavis/CutAndDisplace
+
+### 碰撞检测
+
+Fast Continuous Collision Detection using Deforming Non-Penetration Filters
+
+项目地址：http://gamma.cs.unc.edu/DNF/
+
+代码地址：http://gamma.cs.unc.edu/DNF/request.html
+
+### 电磁学
+
+A generalized polynomial chaos based ensemble Kalman filter with high accuracy  
+
+https://github.com/Andrewpensoneault/Lorenz_63_Stochastic_Galerkin_EnKF
+
+https://github.com/joebling/graduate_essay
+
+https://github.com/Mjjnuu/DoublePendulum 似乎是宇宙学
+
+D:\FluidSim\Electron\DoublePendulum-master\python
+
+https://github.com/keileg/fvbiot
+
+https://github.com/tarcisiofischer/helmholtz-solver/tree/master/src/python
+
+https://github.com/ep2lab 一些磁流体
+
+https://github.com/mgoycoolea/twofluid/blob/master/twofluid.py
+
+https://github.com/trevorcrupi/EM-MG 电磁学的多重网格
+
+### 声学
+
+http://www.k-wave.org/download.php
+
 ### 杂
 
 https://people.sc.fsu.edu/~jburkardt/m_src/ 有各种各样的有限元matlab代码
+
+https://github.com/weymouth/WaterLily.jl 漂亮的NS方程模拟
+
+Extraction of Distinguished Hyperbolic Trajectories for 2D Time-Dependent Vector Field Topology
+
+介绍页面：https://vcg.iwr.uni-heidelberg.de/people/sadlo/
+
+代码地址：https://github.com/lhofmann/eurovis2020_hyperbolic_trajectories
+
+A PArallel Robust Interface Simulator that combines VOF and Front-Tracking
+
+介绍页面：http://www.ida.upmc.fr/~zaleski/paris/index.html
+
+代码地址：http://www.ida.upmc.fr/~zaleski/paris/paris-stable.tar.gz
+
+A Hyperbolic Geometric Flow for Evolving Films and Foams
+
+项目地址：https://ryichando.graphics/
+
+代码地址：https://github.com/sdsgisd/HGF
+
+Interpolation Nodes for High-order Lagrange Finite Elements
+
+https://github.com/pinkieli/Interpolation-Nodes-for-High-order-Lagrange-Finite-Elements.
+
+Semi-Riemannian Manifold Optimization
+
+https://github.com/trgao10/SemiRiem
+
+### 超声速可压缩
+
+https://github.com/Fanxiaotsing/One-dimensional-aero-heating-code 平板对流换热
+
+https://github.com/holdmygithub/ASOInviscidSupersonicFlow 机翼设计
+
+D:\FluidSim\FluidSim\NavierStokes\ASOInviscidSupersonicFlow-master\ASOInviscidSupersonicFlow-master
+
+https://github.com/amikkonen/lidDrivenCavityCompressibleFlowPython 可压缩顶盖驱动
+
+https://github.com/GerardBoberg/CompressiblePipeFlow
+
+D:\FluidSim\FluidSim\CompressibeNewgood\CompressiblePipeFlow-master\CompressiblePipeFlow-master
+
+https://home.cscamm.umd.edu/centpack/examples/euler2d.htm#press
+
+https://github.com/silentmovie/RTmodel RT不稳定
+
+PYRO2 开源库https://python-hydro.github.io/pyro2/compressible_basics.html
+
+超级好https://github.com/jingchangshi/NumericalMethodsForConservationLawsDG
+
+### 空气动力
+
+https://github.com/Maikuelet/FEM_Airplane
+
+
+
+### 混合网格粒子法
+
+PolyPIC: the Polymorphic-Particle-in-Cell Method for Fluid-Kinetic Coupling
+
+https://github.com/smarkidis/fluid-kinetic-PIC
+
+### 大佬主页
+
+下面的主页全部是附有开源代码的
+
+https://cs.uwaterloo.ca/~c2batty/
+
+https://zhxx1987.github.io/#cod 猜猜这是谁？
+
+http://gamma.cs.unc.edu/software/ 这是个项目主页，开源代码很多
+
+https://www.cc.gatech.edu/~turk/
+
+https://people.llnl.gov/lindstrom2 偏向几何数据处理
+
+http://ntoken.com/pubs.html#Thuerey_2016_ofblend
+
+http://www.tkim.graphics/
+
+### 不错的论文
+
+内容很棒的论文以及讲义
+
+Lecture notes Introduction to numerical methods for interfacial flows  
+
+### 很有个性的论文标题
+
+内容不管，但是标题值得写上一万字来吐槽
+
+A massive fractal in days, not years
 
