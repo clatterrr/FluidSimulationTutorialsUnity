@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 def FFT(arr,flag):
     dftres = np.asarray(arr,dtype = complex)
@@ -70,7 +71,7 @@ def derivation(q):
     return res
 
 L = 4
-level = 4
+level = 5
 nmax = 2**level
 total = nmax*nmax
 tmax = 100
@@ -90,6 +91,12 @@ for i in range(0,nmax):
         lwave[i,j] = 2*np.pi * j / L
         if i >= nmax//2:
             lwave[i,j] = 2*np.pi * (j - nmax) / L
+            
+x1 = np.linspace(0, 5, nmax)
+x2 = np.linspace(0, 5, nmax)
+
+X1, X2 = np.meshgrid(x1, x2)            
+
 for t in range(0,tmax-1):
     # # Runge Kutta 4 阶，第一种写法最难记也不好理解
     # rk[0,:] = -dt*derivation(h[t,:])
@@ -111,3 +118,8 @@ for t in range(0,tmax-1):
     rk[2,:] = rk[1,:] - dt*derivation(rk[1,:])
     rk[3,:] = rk[2,:] -dt*derivation(rk[2,:])
     h[t+1,:] = h[t,:]*9/24 + rk[0,:]/3 + rk[1,:]/4 + rk[3,:]/24
+    fig = plt.figure()
+    ax = fig.add_subplot(111, projection='3d')
+    surf = ax.plot_surface(X1, X2, h[t+1,:,:], cmap='bwr', linewidth=0)
+    fig.colorbar(surf)
+    # fig.show()

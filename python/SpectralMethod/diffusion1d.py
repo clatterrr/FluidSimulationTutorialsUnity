@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 def DFT(fx):
     fx = np.asarray(fx, dtype=complex)
@@ -63,29 +64,33 @@ def derivation(q):
     qx = IFFT(1j*k[:]*qhat[:]).real
     qxx = IFFT(-k[:]**2*qhat[:]).real
     qxxx = IFFT(-1j*k[:]**3*qhat[:]).real
-    a = 1 # 系数
+    a = 0.1 # 系数
     res = a*qx # 对流方程
     # res = - a*qxx # 扩散方程
-    res = 6*q*qx + qxxx # kdv 方程
+    # res = 6*q*qx + qxxx # kdv 方程
     # res = q*qx # 无粘性burgers 方程
-    # res = q*qx - a*qxx # 粘性burgers 方程
+    res = q*qx - a*qxx # 粘性burgers 方程
     return res
 
 L = 16
-nmax = 32
-tmax = 100
+nmax = 64
+tmax = 1000
 amp = 2
+cx = np.zeros((nmax))
 b = np.sqrt(amp/2)  # 孤子宽度的倒数
 h = np.zeros((tmax,nmax))
 M = np.zeros((nmax))
 rk = np.zeros((4,nmax))
 dt = 0.01
 for i in range(0,nmax):
-    h[0,i] = amp*1/np.cosh(b*i-4)**2
+    cx[i] = i
+    h[0,i] = amp*1/np.cosh(b*i*0.1-4)**2
     M[i] = i
     if (i >= nmax/2):
         M[i] -= nmax
 k = 2*np.pi*M/L#波数
+h[0,0:32] = 1.5
+h[0,32:nmax] = 0.8
 for t in range(0,tmax-1):
     rk[0,:] = -dt*derivation(h[t,:])
     rk[1,:] = -dt*derivation(h[t,:] + 0.5*rk[0,:])
@@ -93,3 +98,8 @@ for t in range(0,tmax-1):
     rk[3,:] = -dt*derivation(h[t,:] + rk[2,:])
     h[t+1,:] = h[t,:] + (rk[0,:] 
             + 2*rk[1,:] + 2*rk[2,:] + rk[3,:])/6 
+    plt.plot(cx, h[t+1,:], 'b--',label='original values')
+    plt.ylim([0,3])
+    plt.pause(0.01)
+    print(max(h[t+1,:]))
+    print(min(h[t+1,:]))

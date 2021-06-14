@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 def DFT(fx):
     fx = np.asarray(fx, dtype=complex)
@@ -57,20 +58,24 @@ def IFFT(fu):
     return fx
 
 #dh/dt + dh/dx = 0
-nmax = 64
+nmax = 256
 L = 1
 dx = L/nmax
 nu = 1/4
 dt = nu*dx
 M = np.zeros((nmax))
-tmax = 32 # 时间总数
+tmax = 1000 # 时间总数
 h = np.zeros((tmax,nmax))
+cx = np.zeros((nmax))
 for i in range(0,nmax):
     h[0,i] = 1/(4 + 3*np.cos(2*np.pi*i*dx)) # 原始波形
+    cx[i] = i
     # h[0,i] = np.sin(2*np.pi*i*dx)
     M[i] = i
     if (i >= nmax/2):
         M[i] -= nmax
+h[0,0:32] = 1
+h[0,32:nmax] = 2
 k = 2*np.pi*M/L#波数
 hhat = np.zeros((tmax,nmax),dtype = complex)
 rk = np.zeros((5,nmax),dtype=complex)
@@ -100,4 +105,9 @@ for t in range(0,tmax-1):
     rk[4,:] = -dt*1j*k[:]*rk[3,:]
     hhat[t+1,:] = rk[0,:] + rk[1,:] + rk[2,:]/2 + rk[3,:]/6 + rk[4,:]/24
     '''
-    h[t+1,:] = IFFT(hhat[t+1,:]).real
+    h[t+1,:] = IFFT(hhat[t+1,:]).real*0.99
+    plt.plot(cx, h[t+1,:], 'b--',label='original values')
+    plt.ylim([0.8,2.2])
+    plt.pause(0.1)
+    print(max(h[t+1,:]))
+    print(min(h[t+1,:]))

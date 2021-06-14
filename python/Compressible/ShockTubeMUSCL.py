@@ -153,6 +153,10 @@ def MUSCL():
 
 tstart = 0
 tend = 10
+import matplotlib.pyplot as plt
+coordx = np.zeros((nmax))
+for i in range(nmax):
+    coordx[i] = i
 for t in range(0,tmax-2):
     
     for i in range(0,nmax):
@@ -201,6 +205,8 @@ for t in range(0,tmax-2):
     U1[t,:] = Utemp[0,:]
     U2[t,:] = Utemp[1,:]
     U3[t,:] = Utemp[2,:]
+    plt.plot(coordx, U1[t,:], 's',label='original values')
+    plt.pause(0.1)
     
     
     

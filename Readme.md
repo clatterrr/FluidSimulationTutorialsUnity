@@ -116,6 +116,16 @@ https://github.com/nickabattista/IB2d 很棒的开源库，有代码，论文和
 
 https://www.math.nyu.edu/~peskin/ib_lecture_notes/index.html
 
+https://github.com/shurikkuzmin/ImmersedBoundary
+
+### 半拉格朗日Semi-Lagrange
+
+https://github.com/iCFD/SemiLagrangian
+
+D:\FluidSim\FluidSim\semilagrange\SemiLagrangian-master
+
+https://github.com/abarret/SemiLagrangian
+
 ### Fluid Solid Interaction
 
 An Introduction to Fluid-Structure Interaction: Application to the Piston Problem  
@@ -150,6 +160,30 @@ H^1-Stability of the L^2-Projection onto Finite Element Spaces on Adaptively Ref
 
 https://github.com/aschmidtuulm/h1-stability
 
+https://github.com/Vinay5SVeerapur/Finite-element-analysis/blob/master/BEAM%20equation.ipynb
+
+https://github.com/tobyvg/Fluid-codes 方强流
+
+https://github.com/Milad-Rakhsha/FEM_PDE 有限元解势流
+
+https://github.com/emarinhoss/FEM_PETSC
+
+https://github.com/RnkSngh/Double-Slit-Experiment 双缝
+
+https://github.com/shardoolk/FEM
+
+https://github.com/jborggaard/ns2d
+
+https://github.com/Satchit4/Navier-stokes
+
+https://github.com/coltonjconroy/DG_2d_lava_flows
+
+https://github.com/nileshjchoudhary/Flow-through-driven-cavity-Finite-element-analysis-CFD
+
+https://github.com/michelrobijns/pyBurgersFEM
+
+https://github.com/Hahany/Finite-element-method
+
 ### Galerkin
 
 An Introduction to Element-based Galerkin Methods on Tensor-Product Bases: Analysis, Algorithms, and Applications
@@ -174,10 +208,26 @@ https://github.com/asdf123101/HDPG1D
 
 D:\FluidSim\FluidSim\Galerkin\HDPG1D-master
 
+https://github.com/hanveiga/higher-order-methods/blob/master/dg1d.py
+
+https://github.com/wme7/cprlinearexamples 画正方形
+
+https://github.com/AndrewWang996/Discontinuous-Galerkin
+
+https://github.com/Chang-Liu-0520/1D_advec_DG
+
+https://github.com/pinkieli/Interpolation-Nodes-for-High-order-Lagrange-Finite-Elements.Nodal Discontinuous Galerkin Methods: Algorithms, Analysis, and Applications", Jan S Hesthaven and Tim Warburton.
+
 ### 谱方法
 
 SPECTRAL METHOD FOR TIME DEPENDENT NAVIER-STOKES
 EQUATIONS  
+
+http://cpraveen.github.io/teaching/chebpy.html
+
+### 数值积分
+
+https://github.com/jgressier/flowdyn/blob/master/flowdyn/integration.py RK4 low storage
 
 ### 边界元
 
@@ -192,6 +242,8 @@ https://github.com/JuliaLinearAlgebra/IterativeSolvers.jl Julia语言实现的�
 *Optimization in Practice with MATLAB®: For Engineering Students and Professionals* 最优化书籍
 
 https://github.com/Manchery/numerical-analysis-practice
+
+https://github.com/JordanFisher/Paper-Implicit-IBM-2D/blob/master/CODE%20FREEZE/NewHeartValveSim.py 有预处理共轭梯度，快速雅可比等
 
 ### 网格生成
 
@@ -263,6 +315,10 @@ https://github.com/lyc102/ifem
 
 https://amgcl.readthedocs.io/en/latest/examples.html
 
+https://github.com/evstigneevnm/GMG_2D_tests
+
+https://github.com/gnitish18/FEM_Multigrid
+
 ### 多相流
 
 2D Cartesian Quadtree Adaptive Mesh Refinement (AMR) for multiphase Five Equations Model.https://github.com/dattv/2D_CARFIVE
@@ -309,6 +365,10 @@ Fast Continuous Collision Detection using Deforming Non-Penetration Filters
 
 代码地址：http://gamma.cs.unc.edu/DNF/request.html
 
+### 形状优化
+
+https://github.com/jorgensd/MultiMeshShapeOpt_code
+
 ### 电磁学
 
 A generalized polynomial chaos based ensemble Kalman filter with high accuracy  
@@ -331,9 +391,25 @@ https://github.com/mgoycoolea/twofluid/blob/master/twofluid.py
 
 https://github.com/trevorcrupi/EM-MG 电磁学的多重网格
 
+https://github.com/rasalkumar/FEM
+
+https://github.com/ocramz/lib_FEM_py
+
+https://github.com/eduardobehr/pyjoule
+
 ### 声学
 
 http://www.k-wave.org/download.php
+
+https://github.com/pvanberg/DGFEM-Acoustic
+
+https://github.com/1ceaham/AcousticFVTD_GeneralImpedance
+
+https://github.com/ivanmartinezsuarez/Matlab_FVM
+
+### 粘弹性
+
+https://github.com/labsin-unesp/Viscoel-stico-Kelvin-Voigt
 
 ### 杂
 
@@ -367,6 +443,26 @@ Semi-Riemannian Manifold Optimization
 
 https://github.com/trgao10/SemiRiem
 
+https://github.com/noamaig/hyperbolic_orbifolds
+
+An entropy-stable hybrid scheme for simulations of transcritical real-fluid flow[JCP的]
+
+https://github.com/peterma123456789/DoubleFlux-1D
+
+Ice sheet flow with thermally activated sliding
+
+https://github.com/elisamantelli/subtemperate_sliding_rspa_2019
+
+Wavelet-Fourier CORSING techniques for multi-dimensional advection-diffusion-reaction equations
+
+https://github.com/simone-brugiapaglia/corsing-wavelet-fourier-adr
+
+River Profile
+
+https://github.com/sfgallen/ChiProfiler
+
+https://github.com/ISSI2015/M4 Real-Time Deformation
+
 ### 超声速可压缩
 
 https://github.com/Fanxiaotsing/One-dimensional-aero-heating-code 平板对流换热
@@ -393,7 +489,9 @@ PYRO2 开源库https://python-hydro.github.io/pyro2/compressible_basics.html
 
 https://github.com/Maikuelet/FEM_Airplane
 
+### SIMPLE/PISO
 
+https://github.com/mehrdadyo/LS-IBM
 
 ### 混合网格粒子法
 
@@ -418,6 +516,22 @@ https://people.llnl.gov/lindstrom2 偏向几何数据处理
 http://ntoken.com/pubs.html#Thuerey_2016_ofblend
 
 http://www.tkim.graphics/
+
+http://www.cmap.polytechnique.fr/~allaire/
+
+https://sites.google.com/view/valentinresseguier/projects
+
+https://www.konrad-simon.eu/wordpress/?page_id=91
+
+### 开源项目
+
+pyro2
+
+netgen
+
+scipy这玩意有一些矩阵迭代求解法
+
+http://granoo.52083.n8.nabble.com/
 
 ### 不错的论文
 
