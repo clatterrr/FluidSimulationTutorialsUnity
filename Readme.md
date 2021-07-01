@@ -126,6 +126,10 @@ D:\FluidSim\FluidSim\semilagrange\SemiLagrangian-master
 
 https://github.com/abarret/SemiLagrangian
 
+
+
+
+
 ### Fluid Solid Interaction
 
 An Introduction to Fluid-Structure Interaction: Application to the Piston Problem  
@@ -180,9 +184,17 @@ https://github.com/coltonjconroy/DG_2d_lava_flows
 
 https://github.com/nileshjchoudhary/Flow-through-driven-cavity-Finite-element-analysis-CFD
 
-https://github.com/michelrobijns/pyBurgersFEM
-
 https://github.com/Hahany/Finite-element-method
+
+https://zenodo.org/record/4011630#.YMs3l2hLjIV
+
+ https://git.lacan.upc.edu/hybridLab/HDGlab HDGlab: An Open-Source Implementation of the Hybridisable Discontinuous Galerkin Method in MATLAB，里面的四边形八边形单元数据挺多
+
+https://github.com/FESTUNG/FESTUNG
+
+https://github.com/mfem/mfem
+
+https://github.com/matlabfem/matlab_fem_elastoplasticity Efficient and flexible MATLAB implementation of 2D and 3D elastoplastic problems
 
 ### Galerkin
 
@@ -218,6 +230,16 @@ https://github.com/Chang-Liu-0520/1D_advec_DG
 
 https://github.com/pinkieli/Interpolation-Nodes-for-High-order-Lagrange-Finite-Elements.Nodal Discontinuous Galerkin Methods: Algorithms, Analysis, and Applications", Jan S Hesthaven and Tim Warburton.
 
+https://github.com/QuazarTech/DG_Maxwell
+
+### Unstructed mesh
+
+D:\FluidSim\FluidSim\NavierStokes\circular tankhttps://sourceforge.net/projects/circularwavetank/
+
+Development of Numerical Circular Wave Basin and Investigation of Tsunami-Structure Interaction  
+
+HILBERT is a Matlab library for *h*-adaptive Galerkin BEMhttps://www.asc.tuwien.ac.at/~praetorius/?id=hilbert
+
 ### 谱方法
 
 SPECTRAL METHOD FOR TIME DEPENDENT NAVIER-STOKES
@@ -245,6 +267,16 @@ https://github.com/Manchery/numerical-analysis-practice
 
 https://github.com/JordanFisher/Paper-Implicit-IBM-2D/blob/master/CODE%20FREEZE/NewHeartValveSim.py 有预处理共轭梯度，快速雅可比等
 
+https://github.com/JuliaNLSolvers/NLsolve.jl/blob/master/src/solvers/trust_region.jl 置信域
+
+https://github.com/Hannah-Zhou/Optimization_Algorithm
+
+计算电磁学中的超大规模并行矩量法
+
+https://github.com/team-pancho/deltaBEM
+
+https://github.com/taichi-dev/taichi/blob/master/examples/mgpcg_advanced.py
+
 ### 网格生成
 
 http://persson.berkeley.edu/ 特别棒的二维三维网格生成的matlab代码
@@ -259,7 +291,15 @@ D:\FluidSim\OpenSource\tetgen1.5.1\tetgen1.5.1
 
 https://doc.cgal.org/4.13/Manual/tutorials.html
 
+Persson, P. O., and G. Strang (2004), A simple mesh generator in MATLAB  
 
+http://www.robertschneiders.de/meshgeneration/software.html
+
+Adaptive Mesh Refinement in 2D An Efficient Implementation in Matlab for Triangular and Quadrilateral Meshes  
+
+H1-STABILITY OF THE L2-PROJECTION ONTO FINITE ELEMENT SPACES ON ADAPTIVELY REFINED QUADRILATERAL MESHES  
+
+Adaptive Mesh Refinement in 2D An Efficient Implementation in Matlab  
 
 ### 非定常流
 
@@ -287,6 +327,8 @@ https://github.com/scikit-image/scikit-image/blob/main/skimage/segmentation/_cha
 
 https://www.math.ubc.ca/~cbm/cpm/
 
+https://github.com/kimy-de/gpuallencahn 阿兰方程
+
 ### 多孔介质
 
 An Introduction to the Numerics of Flow in Porous Media using Matlab  
@@ -311,7 +353,7 @@ https://github.com/danfortunato 直接关注这个人就行了
 
 https://github.com/pymatting/pymatting/blob/master/pymatting/preconditioner/vcycle.py
 
-https://github.com/lyc102/ifem
+https://github.com/lyc102/ifem ifem
 
 https://amgcl.readthedocs.io/en/latest/examples.html
 
@@ -351,6 +393,10 @@ https://github.com/thijsbon/CMF_project_thijs_victor 有湍流和墙函数
 
 https://github.com/Maikuelet/Turbulence_Modelling_Burgulence
 
+https://github.com/nasa/gfr
+
+https://github.com/nasa/TLNS3D
+
 ### 边界元
 
 https://github.com/Timmmdavis/CutAndDisplace
@@ -381,6 +427,8 @@ https://github.com/Mjjnuu/DoublePendulum 似乎是宇宙学
 
 D:\FluidSim\Electron\DoublePendulum-master\python
 
+An introduction to reservoir simulation using MATLAB  
+
 https://github.com/keileg/fvbiot
 
 https://github.com/tarcisiofischer/helmholtz-solver/tree/master/src/python
@@ -396,6 +444,12 @@ https://github.com/rasalkumar/FEM
 https://github.com/ocramz/lib_FEM_py
 
 https://github.com/eduardobehr/pyjoule
+
+https://github.com/briandaniel/ComputationalElectromagnetics
+
+https://github.com/utsav-akhaury/Computational-Electromagnetics-FDTD-Analysis/blob/master/Microstrip_SW-2.py
+
+Commics is an open-source Python module for the study of the magnetization dynamics in ferromagnetic materials via micromagnetic simulations.https://www.asc.tuwien.ac.at/~praetorius/?id=commics
 
 ### 声学
 
@@ -463,6 +517,8 @@ https://github.com/sfgallen/ChiProfiler
 
 https://github.com/ISSI2015/M4 Real-Time Deformation
 
+A fast implicit method for time-dependent Hamilton-Jacobi PDEs
+
 ### 超声速可压缩
 
 https://github.com/Fanxiaotsing/One-dimensional-aero-heating-code 平板对流换热
@@ -485,6 +541,8 @@ PYRO2 开源库https://python-hydro.github.io/pyro2/compressible_basics.html
 
 超级好https://github.com/jingchangshi/NumericalMethodsForConservationLawsDG
 
+https://archive.siam.org/books/cs18/
+
 ### 空气动力
 
 https://github.com/Maikuelet/FEM_Airplane
@@ -492,6 +550,8 @@ https://github.com/Maikuelet/FEM_Airplane
 ### SIMPLE/PISO
 
 https://github.com/mehrdadyo/LS-IBM
+
+Joukowski transformhttps://www.research-collection.ethz.ch/handle/20.500.11850/146738
 
 ### 混合网格粒子法
 
@@ -523,6 +583,30 @@ https://sites.google.com/view/valentinresseguier/projects
 
 https://www.konrad-simon.eu/wordpress/?page_id=91
 
+http://www-personal.umich.edu/~ndk/
+
+https://people.ece.ubc.ca/kaynama/
+
+https://math.berkeley.edu/~strain/Codes/index.html
+
+https://www.cwimd.nl/doku.php?id=codes:start
+
+https://www.cwi.nl/research/groups/multiscale-dynamics#software
+
+https://math.nist.gov/~WMitchell/
+
+https://www.mcs.anl.gov/~fischer/me528/
+
+### Particle In Cell
+
+https://medium.com/swlh/create-your-own-plasma-pic-simulation-with-python-39145c66578b
+
+吐槽这个网站验证机制太弱智，如果它要求你升级会员才能查看剩下内容，那么你只要重新换个浏览器就行了。
+
+https://www.particleincell.com/2011/particle-in-cell-example/
+
+https://personalpages.manchester.ac.uk/staff/david.silvester/
+
 ### 开源项目
 
 pyro2
@@ -532,6 +616,20 @@ netgen
 scipy这玩意有一些矩阵迭代求解法
 
 http://granoo.52083.n8.nabble.com/
+
+clawpack
+
+aspect https://aspect.geodynamics.org/
+
+dealii
+
+fenics
+
+http://milamin.org/downloads/
+
+https://personalpages.manchester.ac.uk/staff/david.silvester/ifiss/
+
+
 
 ### 不错的论文
 
@@ -545,3 +643,6 @@ Lecture notes Introduction to numerical methods for interfacial flows
 
 A massive fractal in days, not years
 
+### 没用但暂时不删的链接
+
+code_aster https://code-aster.org/spip.php?article920
